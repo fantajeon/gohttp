@@ -8,13 +8,13 @@ Golang implementation replace "python -m SimpleHTTPServer"
 ```
 When url = "http://localhost:8080/a.html?param1=val1&param2=val2", request file is /a.html.
 
-$ go get -u github.com/fnatajeon/gohttp
-$ go install github.com/fnatajeon/gohttp/gohttp
+$ go get -u github.com/fantajeon/gohttp
+$ go install github.com/fantajeon/gohttp/gohttp
 
 $ gohttp --help
 
 $ gohttp
-Serving HTTP on 192.168.1.103 port 8080 from "/home/fnatajeon/workspace/work" ...
+Serving HTTP on 192.168.1.103 port 8080 from "/home/fantajeon/workspace/work" ...
 
 $ gohttp -d=/home -p=9000
 Serving HTTP on 192.168.1.128 port 9000 from "/home" ...
