@@ -159,7 +159,7 @@ func (fileServer *FileServer) requestURIToFilepath(uri string) (fullpath string,
 	u, _ := url.Parse(unescapeIt)
 	relpath = u.Path
 
-	fmt.Printf("Parsed URL=%s=>%s\n", uri, relpath)
+	log.Printf("Parsed URL=%s=>%s\n", uri, relpath)
 	fullpath = filepath.Join(fileServer.Webroot, relpath[1:])
 
 	return

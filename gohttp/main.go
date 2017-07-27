@@ -5,7 +5,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/itang/gohttp"
+	"github.com/fantajeon/gohttp"
 )
 
 var (
