@@ -156,8 +156,8 @@ func (fileServer *FileServer) handler(w http.ResponseWriter, req *http.Request) 
 
 func (fileServer *FileServer) requestURIToFilepath(uri string) (fullpath string, relpath string) {
 	unescapeIt, _ := url.QueryUnescape(uri)
-
-	relpath = unescapeIt
+	u, _ := url.Parse(unescapeIt)
+	relpath = u.Path
 	fullpath = filepath.Join(fileServer.Webroot, relpath[1:])
 
 	return
