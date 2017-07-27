@@ -6,6 +6,8 @@ Golang implementation replace "python -m SimpleHTTPServer"
 ### Usage
 
 ```
+When url = "http://localhost:8080/a.html?param1=val1&param2=val2", request file is /a.html.
+
 $ go get -u github.com/itang/gohttp
 $ go install github.com/itang/gohttp/gohttp
 
